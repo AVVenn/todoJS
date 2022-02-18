@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(1489345.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	max-height: 100%;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	width: 100%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.user-input {
+	outline: none;
+	width: 500px;
+	padding: 5px;
+	border: none;
+	border-radius: 10px;
+	font-size: 30px;
+	display: block;
+	margin: 0 auto 15px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-input:hover, .user-input:focus {
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.add {
+	display: block;
+	font-weight: 700;
+	font-size: 25px;
+	background-color: #F5E343;
+	width: 200px;
+	border-radius: 10px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	margin-bottom: 15px;
+}
+
+
+.add:hover {
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+.container-to-do {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 200px;
+	row-gap: 20px;
+	column-gap: 20px;
+	align-content: stretch;
+	justify-content: space-between;
+}
+
+
+.todo {
+	font-weight: 700;
+	font-size: 20px;
+	background-color: #F5E343;
+	border-radius: 10px;
+	padding: 3px;
+	cursor: pointer;
+	border: 1px solid #404040;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	transition: all 0.2s ease;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.todo:hover {
+	box-shadow: 2px 9px 7px rgba(0,0,0,0.3);
+}
+
+
+.done {
+	background-color: rgb(12, 158, 60);    
+}
+
+.container-todo{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding-bottom: 10px;
+}
+
+
+
+.container-todo > i {
+	font-size: 40px;
+}
+
+
+.fa-trash {
+	color: red;
+}
+
+.far {
+	color: green;
+}
+
+.done {
+	color: orange;
+}
+
+
+.todo__text {
+
+}
